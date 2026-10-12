@@ -1,0 +1,70 @@
+<Window x:Class="MenedzerZadan.TasksWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Moje zadania"
+Height="501"
+Width="938"
+WindowStartupLocation="CenterScreen"
+Background="#EBD1E1">
+    <Grid Margin="30">
+        <TextBlock Text="MOJE ZADANIA:"
+                    FontFamily="Georgia"
+                    FontSize="30"
+                    FontWeight="Bold"
+                    Foreground="#FFEF6565"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top" Margin="0,128,0,0"/>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="0,80,0,0">
+
+            <Button Content="+ Dodaj zadanie"
+                    Background="#495575"
+                    Foreground="#8A9AC2"
+                    Width="150"
+                    Height="40"
+                    />
+
+            <Button Content="Edytuj"
+                    Background="#495575"
+                    Foreground="#8A9AC2"
+                    Width="100"
+                    Height="40"
+                    Margin="5"/>
+
+            <Button Content="Usuñ"
+                    Background="#495575"
+                    Foreground="#8A9AC2"
+                    Width="100"
+                    Height="40"
+                    Margin="5"/>
+        </StackPanel>
+
+        <ListView Margin="31,290,0,10">
+            <ListView.Resources>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Background" Value="#C0CCA7"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="FontFamily" Value="Georgia"/>
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="Padding" Value="10"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#AABF8A"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="#8FA36B"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.Resources>
+
+            <ListViewItem Content="Nauka na Teoriê"/>
+            <ListViewItem Content="Zrobiæ obiad"/>
+            <ListViewItem Content="Umyæ w³osy"/>
+        </ListView>
+    </Grid>
+</Window>

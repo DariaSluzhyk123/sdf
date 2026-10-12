@@ -1,0 +1,47 @@
+﻿<Window x:Class="MenedzerZadan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menedzer Zadań"
+        Height="450"
+        Width="804"
+        WindowStartupLocation = "CenterScreen">
+
+    <Grid Background="#FFF99494">
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Width="300">
+            <TextBlock Text="MENEDŻER ZADAŃ"
+                   FontFamily="Courier"
+                   Foreground="#FFD4FFE5"
+                   FontWeight="Bold"
+                   FontSize="30"
+                   TextAlignment="Center" Height="74"
+                   />
+            <TextBlock Text="Planowanie dnia:"
+                   FontFamily="Georgia"
+                   Foreground="#FFFFF6BB"
+                   FontSize="20"
+                   Height="44" Width="188"    />
+            <Button Content="Zadania do zrobienia"
+                Background="#495575"
+                Foreground="#8A9AC2"
+                Height="45"
+                FontSize="16"
+                Margin="0,5"
+                BorderThickness="0"   />
+            <Button Content="Ustawinia"
+                Background="#495575"
+                Foreground="#8A9AC2"
+                Height="45"
+                FontSize="16"
+                BorderThickness="0"   />
+            <Button Content="Zamknij"
+                Background="#495575"
+                Foreground="#8A9AC2"
+                FontSize="16"
+                Height="45"
+                Margin="0,5"
+                BorderThickness="0"   />
+        </StackPanel>
+    </Grid>
+</Window>
